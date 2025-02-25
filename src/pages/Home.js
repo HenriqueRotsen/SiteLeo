@@ -1,87 +1,55 @@
 import '../App.css';
 import '../styles/Home.css';
 import React from 'react';
-import Logo from '../components/images/logo-no-background.png'
-import ProfessionalFoto from '../components/images/profissional2.jpg'
-import { useState, useEffect } from 'react';
+//import Logo from '../components/images/LOGO_ROTSEN_03.png'
+import ProfessionalFoto from '../components/images/foto_leonardo.jpeg'
 import Button from '../components/Button.js'
 
 export const Home = () => {
-    const [showLogo, setShowLogo] = useState(false);
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowLogo(true);
-        }, 1500);
-
-        return () => clearTimeout(timer);
-    }, []);
 
     return (
         <>
-            <div className='main-box'>
-                <img src={Logo} alt='Logo' className={`logo-main-box ${showLogo ? 'show' : ''}`} />
-            </div>
-            <h1>Sobre</h1>
+            <div className='main-box' />
+            <h1>Quem sou eu?</h1>
             <section className='about-container'>
-                
                 <div className='side-text'>
                     <p>
-                        Graduando em Ciência da Computação pela Universidade Federal de Minas Gerais (UFMG).<br />
-                        <b>Principais conhecimentos</b>
+                    Sou um apaixonado pelo basquete e pela educação física, com uma trajetória de mais de 10 anos dentro do esporte. Fui atleta do Minas Tênis Clube por oito anos, e desde 2017 venho atuando como treinador e professor de basquete.
+                    <br/><br/>Minha experiência inclui trabalho na comissão técnica de equipes, ensino para crianças em escolinhas de basquete e treinamento individual de habilidades, auxiliando atletas a aprimorarem seu jogo. Além disso, tive a oportunidade de trabalhar com jogadores profissionais do NBB, ajudando-os a desenvolver seu desempenho.
+                    <br/><br/>Atualmente, atuo como professor de educação física e treinador de basquete no Colégio Santo Agostinho, além de prestar treinamentos personalizados de habilidades em basquete. Sou formado em Educação Física pela Universidade Federal de Minas Gerais e possuo certificação FIBA Adelante.
+                    <br/><br/>Meu compromisso é com o desenvolvimento dos atletas, proporcionando um treinamento de qualidade e ajudando cada jogador a alcançar seu potencial máximo dentro do esporte.
                     </p>
-                    <b>Linguagens</b>
+                    {/* <b>Principais Áreas</b>
                     <ul className='has-bar'>
-                        <li className='item'>C</li>
-                        <li className='item'>C++</li>
-                        <li className='item'>C#</li>
-                        <li className='item'>JavaScript</li>
-                        <li className='item'>Python</li>
-                        <li className='item'>Java</li>
-                        <li className='item'>Matlab</li>
-                        <li className='item'>Vue</li>
-                        <li className='item'>Html</li>
-                        <li className='item'>Css</li>
+                        <li className='item'>Treinador Individual de Habilidades</li>
+                        <li className='item'>Professor de Educação Física</li>
+                        <li className='item'>Treinador de Basquete</li>
+                        <li className='item'>Formação de Jovens Atletas</li>
+                        <li className='item'>Treinamento de Atletas Profissionais (NBB)</li>
                     </ul>
-                    <b>Bibliotecas</b>
+                    <b>Experiência Profissional</b>
                     <ul className='has-bar'>
-                        <li className='item'>.NET</li>
-                        <li className='item'>Pandas</li>
-                        <li className='item'>Scypi</li>
-                        <li className='item'>Numpy</li>
-                        <li className='item'>Seaborn</li>
-                        <li className='item'>Scikit-learn</li>
-                        <li className='item'>Statsmodels</li>
+                        <li className='item'>Colégio Santo Agostinho - Professor e Treinador de Basquete</li>
+                        <li className='item'>FM Basquete - Treinador Individual de Habilidades</li>
+                        <li className='item'>Minas Tênis Clube - Atleta por 8 anos</li>
                     </ul>
-                    <b>Outras Tecnologias</b>
+                    <b>Formação Acadêmica</b>
                     <ul className='tecnologies'>
-                        <li className='item'>SonarQube</li>
-                        <li className='item'>Jenkins</li>
-                        <li className='item'>OwaspZap</li>
-                        <li className='item'>Azure DevOPS</li>
-                        <li className='item'>VS Code</li>
-                        <li className='item'>Visual Studio</li>
-                        <li className='item'>Excel</li>
-                        <li className='item'>Scrum</li>
-                        <li className='item'>Kanban</li>
-                        <li className='item'>Design Thinking</li>
-                        <li className='item'>Knime</li>
-                        <li className='item'>SolidWorks</li>
-                    </ul>
-                    Possui bastante interesse nas áreas de Inteligência Artificial, Aprendizado de Máquina e Cibersegurança, 
-                    tendo como foco principal as aplicações voltadas para o mercado automotivo e computação embarcada.
+                        <li className='item'>Bacharelado em Educação Física - Universidade Federal de Minas Gerais</li>
+                        <li className='item'>Ensino Médio - Colégio Santo Agostinho</li>
+                        <li className='item'>Certificação FIBA Adelante</li>
+                    </ul> */}
+                    Tenho um grande interesse pelo desenvolvimento esportivo e a evolução de atletas, buscando sempre aprimorar minhas técnicas de treinamento e metodologia de ensino. Acredito que o basquete é uma ferramenta poderosa para a disciplina, superação e trabalho em equipe.
                     <br />
-                    Também possuí um grande interesse pelas áreas de Ciência de Dados e Pesquisa Operacional, que fez com que
-                    isso se refletisse em suas realizações, incluindo o desenvolvimento de um algoritmo inicial de Machine Learning,
-                    a implementação do algoritmo Simplex em Python. Além de outros trabalhos... 
-                    <b>Para saber mais, acesse a página a seguir</b>
+                    <b>Para saber mais, entre em contato!</b>
                     <br />
                 </div>
                 <div className='professional-image-box'>
-                    <img src={ProfessionalFoto} alt='Henrique Rotsen' className='professional-image' />
+                    <img src={ProfessionalFoto} alt='Leonardo Rotsen' className='professional-image' />
                 </div>
             </section>
             <div className='btn-contato'>
-                <Button path='/trabalhos' buttonSize={'btn--medium'}>Veja mais trabalhos</Button>
+                <Button path='/trabalhos' buttonSize={'btn--medium'}>Entre em contato</Button>
             </div>
         </>
     )

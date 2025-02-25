@@ -1,5 +1,5 @@
 .navbar {
-    background: #191919;
+    background: #1D5186;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .navbar-logo {
-    color: #fff;
+    color: #fff9f9;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -27,26 +27,31 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-    width: 6%;
+    width: 7%;
   }
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 60vw;
     justify-content: center;
-    margin-right: 2rem;
+    margin: 0;
 }
 
 .nav-item {
-    height: 80px;
+    height: 50px;
 }
 
 .nav-links {
-    color: #ededed;
+    color: #fff9f9;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -55,12 +60,12 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #ff851b;
+    border-bottom: 4px solid #fff9f9;
     transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-    color: #ededed;
+    color: #fff9f9;
 }
 
 .nav-links-mobile {
@@ -104,7 +109,7 @@
     }
 
     .nav-links:hover {
-        background-color: #ff851b;
+        background-color: #1d5186;
         color: #2a2a2a;
         border-radius: 0;
     }
@@ -112,6 +117,8 @@
     .navbar-logo {
         position: absolute;
         left: 0;
+        height: auto;
+        width: 15vw;
     }
 
     .menu-icon {
@@ -125,7 +132,7 @@
     }
 
     .fa-times {
-        color: #ededed;
+        color: #fff9f9;
         font-size: 2rem;
     }
 
@@ -138,15 +145,15 @@
         text-decoration: none;
         font-size: 1.5rem;
         background-color: transparent;
-        color: #ededed;
+        color: #fff9f9;
         padding: 14px 20px;
-        border: 1px solid #ededed;
+        border: 1px solid #fff9f9;
         transition: all 0.3s ease-out;
     }
 
     .nav-links-mobile:hover {
-        background: #ededed;
-        color: #00254a;
+        background: #fff9f9;
+        color: #1d5186;
         transition: 250ms;
     }
 }

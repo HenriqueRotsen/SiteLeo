@@ -4,11 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../components/images/background-home-page.png');
+    background-image: url('../components/images/Template4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: #FFF9F9;
 }
 
 .contato {
@@ -18,7 +18,7 @@
     display: flex;
     height: 50vh;
     width: 50vw;
-    background-color: rgba(133, 133, 133, 0.5);
+    background-color: rgba(133, 133, 133, 0.3);
     border: 1px solid transparent;
     border-radius: 5px;
 }
@@ -39,7 +39,8 @@
     outline: none;
     border: none;
     width: 100%;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
+    padding: 5px;
 }
 
 .form-group-message {
@@ -54,11 +55,12 @@
     outline: none;
     border: none;
     resize: none;
+    padding: 5px;
 }
 
 .contato h1 {
     margin: 20px;
-    color: #ff851b;
+    color: #FFF9F9;
 }
 
 .form-group-button {
@@ -73,13 +75,17 @@
 }
 
 .error-message {
-    color: #ff851b;
+    color: #B25D0F;
     font-size: 0.9rem;
     margin-top: 5px;
   }
   
 
 @media screen and (max-width: 960px) {
+    .contato-box {
+        background-image: url('../components/images/Template4.jpg');
+    }
+
     .form-group {
         font-size: 20px;
         display: flex;

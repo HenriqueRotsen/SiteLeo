@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css'
-import LogoCantoPagina from './images/logo-no-background-canto.png'
+import LogoCantoPagina from './images/LOGO_ROTSEN_03.png'
 
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={LogoCantoPagina} alt='Henrique Rotsen' width='100%' height='auto'/>
+            <img src={LogoCantoPagina} alt='Leonardo Rotsen' width='100%' height='auto' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -32,7 +32,7 @@ function Header() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Trabalhos
+                Personal
               </Link>
             </li>
             <li className='nav-item'>
@@ -41,9 +41,16 @@ function Header() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Currículo
+                Consultoria
               </Link>
             </li>
+
+            <li className='nav-item'>
+              <Link to='/curriculo' className='nav-links' onClick={closeMobileMenu}>
+                Skill Development 🏀
+              </Link>
+            </li>
+
 
             <li>
               <Link

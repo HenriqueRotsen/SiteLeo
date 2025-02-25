@@ -10,14 +10,8 @@ function Footer() {
     <>
       <div className='footer-container'>
         <div className='social-medias'>
-          <a href='https://www.linkedin.com/in/henrique-rotsen-santos-ferreira/'>
+          <a href='https://www.linkedin.com/in/leonardo-rotsen-327084229/' target="_blank" rel="noopener noreferrer">
             <i class="fab fa-linkedin"/>
-          </a>
-          <a href='https://www.facebook.com/profile.php?id=100002146099863'>
-            <i class="fab fa-facebook" />
-          </a>
-          <a href='https://github.com/HenriqueRotsen'>
-            <i class="fab fa-github" />
           </a>
         </div>
         <div className='copyright'>

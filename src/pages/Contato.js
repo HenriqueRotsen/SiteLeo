@@ -112,7 +112,7 @@ export const Contato = () => {
             {errors.name && <p className="error-message">{errors.name}</p>}
           </div>
           <div className="form-group-button">
-            <EmailButton type="submit" className='btn-send' buttonStyle={'btn--outline'}>Enviar</EmailButton>
+            <EmailButton type="submit" className='btn-send' buttonStyle={'btn--primary'}>Enviar</EmailButton>
           </div>
           {submissionStatus && <p>{submissionStatus}</p>}
         </form>
